@@ -151,7 +151,8 @@ function handleClick(event){
 
 async function sendEmail(items = {}) {
     try {
-        const res = await fetch("http://localhost:5000/send-email", {
+        // const res = await fetch("http://localhost:5000/send-email", {
+        const res = await fetch("https://laundry-app-3oqn.onrender.com/send-email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(items),
